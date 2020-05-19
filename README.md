@@ -16,10 +16,11 @@ A high-level overview of the entities that make up this functional system.
 Objects  | Messages
 ------------- | -------------
 Person  |
-Bike  | working?
+Bike  | broken?
+Bike  | report_broken
 DockingStation | release_bike
 DockingStation | dock(bike)
-DockingStation | bike
+DockingStation | capacity
 
 Based on [client's requirements](USER_STORIES.md).
 

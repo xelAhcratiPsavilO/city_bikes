@@ -3,7 +3,6 @@
 Interaction diagram that shows how Objects use Messages to communicate with one another.
 
 ```
-Bike <-- working? --> true/false
 Bike <-- broken? --> true/false
 Bike <-- report_broken --> true
 DockingStation <-- release_bike --> error(if none available)
