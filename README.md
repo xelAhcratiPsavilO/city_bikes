@@ -7,6 +7,7 @@ Object based system to optimize a digital network for a city-bike service. A net
 * [Technologies](#technologies)
 * [Getting Started](#getting-started)
 * [Running the tests](#running-the-tests)
+* [Author](#author)
 
 ## Domain Model
 
@@ -49,5 +50,9 @@ $ irb
 # clone or download and unzip repository
 
 # launch RSpec
-$ repec
+$ rspec
 ```
+
+## Author
+
+Alejandro Pitarch Olivas - May 19th 2020
