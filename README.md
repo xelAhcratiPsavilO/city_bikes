@@ -34,9 +34,11 @@ Objects-Messages [diagram](DIAGRAM.md).
 # launch irb, pry or other ruby REPL
 $ irb
 # load the DockingStation class
-
+001 > require './lib/docking_station'
+=> true
 # create a new DockingStation instance
-001 > station = DockingStation.new
+002 > station = DockingStation.new
+=> #<DockingStation:0x00007f8aee176d50>
 ```
 
 ## Running the tests
