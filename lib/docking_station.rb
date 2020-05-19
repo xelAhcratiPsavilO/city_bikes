@@ -1,5 +1,3 @@
-require_relative 'bike'
-
 class DockingStation
 
   attr_accessor :capacity
@@ -33,6 +31,6 @@ class DockingStation
   end
 
   def broken?
-    @bikes.last.working? == false
+    @bikes.last.broken? == true
   end
 end
