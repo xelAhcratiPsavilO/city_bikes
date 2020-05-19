@@ -17,6 +17,8 @@ Objects  | Messages
 Person  |
 Bike  | working?
 DockingStation | release_bike
+DockingStation | dock(bike)
+DockingStation | bike
 
 Based on [client's requirements](USER_STORIES.md).
 
