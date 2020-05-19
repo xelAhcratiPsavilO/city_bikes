@@ -2,26 +2,34 @@ require 'docking_station'
 
 describe DockingStation do
 
+  bike = Bike.new
+  bike2 = Bike.new
+
   describe '#release_bike' do
     it 'raises an error when there are no bikes available' do
       expect { subject.release_bike }.to raise_error 'No bikes available'
     end
-
     it 'releases a bike' do
-      bike = Bike.new
       subject.dock(bike)
       expect(subject.release_bike).to eq bike
     end
   end
 
-  it 'docks objects' do
-    bike = Bike.new
-    expect(subject.dock(bike)).to eq bike
+  describe '#dock' do
+    it 'raises an error when full' do
+      subject.dock(bike)
+      expect { subject.dock bike2 }.to raise_error 'Docking station full'
+    end
+    it 'docks objects' do
+      expect(subject.dock(bike)).to eq bike
+    end
   end
 
-  it 'returns docked bikes' do
-    bike = Bike.new
-    subject.dock(bike)
-    expect(subject.bike).to eq bike
+  describe '#bike' do
+    it 'returns docked bikes' do
+      subject.dock(bike)
+      expect(subject.bike).to eq bike
+    end
   end
+
 end
