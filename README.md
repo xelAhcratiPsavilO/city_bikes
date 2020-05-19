@@ -5,6 +5,8 @@ Object based system to optimize a digital network for a city-bike service. A net
 ## Table of Contents
 * [Domain Model](#domain-model)
 * [Technologies](#technologies)
+* [Getting Started](#getting-started)
+* [Running the tests](#running-the-tests)
 
 ## Domain Model
 
@@ -23,3 +25,25 @@ Objects-Messages [diagram](DIAGRAM.md).
 ## Technologies
 * Ruby
 * RSpec
+
+## Getting Started
+
+```sh
+# clone or download and unzip repository
+
+# launch irb, pry or other ruby REPL
+$ irb
+# load the DockingStation class
+
+# create a new DockingStation instance
+001 > station = DockingStation.new
+```
+
+## Running the tests
+
+```sh
+# clone or download and unzip repository
+
+# launch RSpec
+$ repec
+```
