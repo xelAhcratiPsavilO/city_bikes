@@ -2,6 +2,8 @@ require 'bike'
 
 describe Bike do
 
-  it { is_expected.to respond_to :working?}
+  it 'works' do
+    expect(subject).to be_working
+  end
 
 end
