@@ -2,7 +2,15 @@ require 'docking_station'
 
 describe DockingStation do
 
-  bike = Bike.new
+  let(:bike) { Bike.new }
+  subject { DockingStation.new }
+
+  describe '#initialize' do
+    it 'defaults capacity' do
+      described_class::DEFAULT_CAPACITY.times { subject.dock bike }
+      expect{ subject.dock bike }.to raise_error 'Docking station full'
+    end
+  end
 
   describe '#release_bike' do
     it 'raises an error when there are no bikes available' do
@@ -16,7 +24,7 @@ describe DockingStation do
 
   describe '#dock' do
     it 'raises an error when full' do
-      DockingStation::DEFAULT_CAPACITY.times { subject.dock bike }
+      subject.capacity.times { subject.dock bike }
       expect { subject.dock bike }.to raise_error 'Docking station full'
     end
     it 'docks objects' do
