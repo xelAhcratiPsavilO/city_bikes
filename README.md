@@ -27,8 +27,10 @@ Based on [client's requirements](USER_STORIES.md).
 Objects-Messages [diagram](DIAGRAM.md).
 
 ## Technologies
-* Ruby
-* RSpec
+* [Ruby](https://www.ruby-lang.org/en/) - High-level, general-purpose language utilized as main technology.
+* [RSpec](https://rspec.info/) - Domain specific language utilized as testing tool.
+* [IRB](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell) - Interactive ruby shell utilized as a REPL.
+* [MD](https://www.markdownguide.org/) - Lightweight markup language utilized for documentation.
 
 ## Getting Started
 
@@ -38,10 +40,10 @@ Objects-Messages [diagram](DIAGRAM.md).
 # launch irb, pry or other ruby REPL
 $ irb
 # load the DockingStation class
-001 > require './lib/docking_station'
+> require './lib/docking_station'
 => true
 # create a new DockingStation instance
-002 > station = DockingStation.new
+> station = DockingStation.new
 => #<DockingStation:0x00007f8aee176d50>
 ```
 
@@ -56,4 +58,4 @@ $ rspec
 
 ## Author
 
-Alejandro Pitarch Olivas - May 19th 2020
+Alejandro Pitarch Olivas
