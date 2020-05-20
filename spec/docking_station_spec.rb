@@ -5,8 +5,6 @@ describe DockingStation do
 
   it_behaves_like BikeContainer
 
-  subject { DockingStation.new }
-
   describe '#release_bike' do
     it 'raises an error when there are no bikes available' do
       expect { subject.release_bike }.to raise_error 'No bikes available'

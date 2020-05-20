@@ -13,10 +13,6 @@ module BikeContainer
     bikes << bike
   end
 
-  def full?
-    bikes.count >= capacity
-  end
-
   def remove_bike
     raise "#{self.class.name} empty" if empty?
     bikes.pop
@@ -27,6 +23,10 @@ module BikeContainer
   end
 
   private
+
+  def full?
+    bikes.count >= capacity
+  end
 
   attr_reader :bikes
 end
