@@ -1,4 +1,4 @@
-# City Bikes
+# City Bikes 🚲
 
 Object based system to optimize a digital network for a city-bike service. A network of docking stations and bikes that anyone can use.
 
@@ -59,6 +59,11 @@ $ irb
 
 # launch RSpec
 $ rspec
+# output
+.............................
+
+Finished in 0.08404 seconds (files took 0.57766 seconds to load)
+29 examples, 0 failures
 ```
 
 ## Author
