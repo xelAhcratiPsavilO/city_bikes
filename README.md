@@ -18,9 +18,14 @@ Objects  | Messages
 Person  |
 Bike  | broken?
 Bike  | report_broken
+Bike  | fix
 DockingStation | release_bike
 DockingStation | dock(bike)
 DockingStation | capacity
+Garage |fix_bikes
+Garage |add_bike
+Garage |remove_bike
+Garage |capacity
 
 Based on [client's requirements](USER_STORIES.md).
 
