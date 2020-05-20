@@ -5,15 +5,17 @@ describe Van do
 
   it_behaves_like BikeContainer
 
-  let(:bike) { double :bike }
+  let(:working_bike) { double :bike, broken?: false }
+  let(:broken_bike) { double :bike, broken?: true }
+  let(:station) { double :docking_station }
+  let(:garage) { double :garage }
 
-  it 'loads bikes' do
-    expect(subject.load(bike)).to eq [bike]
+  it 'takes broken bikes from stations to garages' do
+    
   end
 
-  it 'unloads bikes' do
-    subject.load(bike)
-    expect(subject.unload).to eq bike
+  it 'takes working bikes from garages to stations' do
+
   end
 
 end

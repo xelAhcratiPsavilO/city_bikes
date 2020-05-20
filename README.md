@@ -26,6 +26,9 @@ Garage |fix_bikes
 Garage |add_bike
 Garage |remove_bike
 Garage |capacity
+Van | load
+Van | unload
+Van | capacity
 
 Based on [client's requirements](USER_STORIES.md).
 
@@ -63,7 +66,7 @@ $ rspec
 .............................
 
 Finished in 0.08404 seconds (files took 0.57766 seconds to load)
-29 examples, 0 failures
+38 examples, 0 failures
 ```
 
 ## Author

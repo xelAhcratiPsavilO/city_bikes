@@ -16,6 +16,9 @@ DockingStation <-- dock(a faulty Bike) --> [a faulty Bike]
 
 Garage         <--       fix_bikes     --> a Bike(not broken)
 
+Van         <--        load(a Bike)    --> a Bike
+Van         <--           unload       --> a Bike(not broken)
+
 BikeContainer  <--       capacity      --> given capacity (if given)
 BikeContainer  <--       capacity      --> default capacity (if none given)
 BikeContainer  <--   add_bike(a Bike)  --> error (if out of capacity)

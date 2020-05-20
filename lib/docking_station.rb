@@ -11,10 +11,4 @@ class DockingStation
     def dock(bike)
       add_bike bike
     end
-
-    private
-
-    def working_bikes
-      bikes.reject { |bike| bike.broken? }
-    end
 end
