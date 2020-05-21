@@ -3,36 +3,15 @@
 Object based system to optimize a digital network for a city-bike service. A network of docking stations and bikes that anyone can use.
 
 ## Table of Contents
-* [Domain Model](#domain-model)
+* [Code Quality](#code-quality)
 * [Technologies](#technologies)
 * [Getting Started](#getting-started)
 * [Running the tests](#running-the-tests)
+* [Domain Model](#domain-model)
 * [Author](#author)
 
-## Domain Model
-
-A high-level overview of the entities that make up this functional system.
-
-Objects  | Messages
-------------- | -------------
-Person  |
-Bike  | broken?
-Bike  | report_broken
-Bike  | fix
-DockingStation | release_bike
-DockingStation | dock(bike)
-DockingStation | capacity
-Garage |fix_bikes
-Garage |add_bike
-Garage |remove_bike
-Garage |capacity
-Van | load
-Van | unload
-Van | capacity
-
-Based on [client's requirements](USER_STORIES.md).
-
-Objects-Messages [diagram](DIAGRAM.md).
+## Code Quality
+[![Maintainability](https://api.codeclimate.com/v1/badges/712bdf1ba315301d6bdd/maintainability)](https://codeclimate.com/github/xelAhcratiPsavilO/city_bikes/maintainability)
 
 ## Technologies
 * [Ruby](https://www.ruby-lang.org/en/) - High-level, general-purpose language utilized as main technology.
@@ -68,6 +47,31 @@ $ rspec
 Finished in 0.08404 seconds (files took 0.57766 seconds to load)
 38 examples, 0 failures
 ```
+
+## Domain Model
+
+High-level overview of the entities that make up this functional system.
+
+Objects  | Messages
+------------- | -------------
+Person  |
+Bike  | broken?
+Bike  | report_broken
+Bike  | fix
+DockingStation | release_bike
+DockingStation | dock(bike)
+DockingStation | capacity
+Garage |fix_bikes
+Garage |add_bike
+Garage |remove_bike
+Garage |capacity
+Van | load
+Van | unload
+Van | capacity
+
+Based on [client's requirements](USER_STORIES.md).
+
+Objects-Messages [diagram](DIAGRAM.md).
 
 ## Author
 
