@@ -2,12 +2,15 @@ require 'garage'
 require 'support/shared_examples_for_bike_container'
 
 describe Garage do
+
   it_behaves_like BikeContainer
 
+  subject(:garage) { described_class.new }
+  let(:bike) { double :bike }
+
   it 'fixes broken bikes' do
-    bike = double :bike
-    subject.add_bike bike
+    garage.add_bike bike
     expect(bike).to receive :fix
-    subject.fix_bikes
+    garage.fix_bikes
   end
 end

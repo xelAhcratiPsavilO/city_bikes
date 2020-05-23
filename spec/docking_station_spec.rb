@@ -5,25 +5,26 @@ describe DockingStation do
 
   it_behaves_like BikeContainer
 
+  subject(:docking_station) { described_class.new }
+  let(:bike) { double :bike, broken?: false }
+  let(:broken_bike) { double :bike, broken?: true }
+
   describe '#release_bike' do
     it 'raises an error when there are no bikes available' do
-      expect { subject.release_bike }.to raise_error 'No bikes available'
+      expect { docking_station.release_bike }.to raise_error 'No bikes available'
     end
     it 'releases a bike' do
-      bike = double(:bike, broken?: false)
-      subject.dock bike
-      expect(subject.release_bike).to eq bike
+      docking_station.dock bike
+      expect(docking_station.release_bike).to eq bike
     end
   end
 
   describe '#dock' do
     it 'docks working bikes' do
-      bike = double(:bike)
-      expect(subject.dock bike).to eq [bike]
+      expect(docking_station.dock bike).to eq [bike]
     end
     it 'docks broken bikes' do
-      faulty_bike = double(:bike, broken?: true)
-      expect(subject.dock faulty_bike).to eq [faulty_bike]
+      expect(docking_station.dock broken_bike).to eq [broken_bike]
     end
   end
 

@@ -72,6 +72,8 @@ Finished in 0.08404 seconds (files took 0.57766 seconds to load)
 
 High-level overview of the entities that make up this functional system.
 
+![](domain_model/DomainModel.png)
+
 Based on [client's requirements](USER_STORIES.md).
 
 Objects-Messages [diagram](DIAGRAM.md).

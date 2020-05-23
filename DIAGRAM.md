@@ -3,7 +3,7 @@
 Interaction diagram that shows how Objects use Messages to communicate with one another.
 
 ```
-CLASS          <--     METHOD    --> OUTPUT
+CLASS          <--         METHOD      --> OUTPUT
 
 Bike           <--        broken?      --> true/false
 Bike           <--    report_broken    --> true
